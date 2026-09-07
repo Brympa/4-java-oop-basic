@@ -27,7 +27,7 @@ public class ComplexNumber {
 
     public ComplexNumber sum(ComplexNumber complexNumber) {
         double newReal = this.real + complexNumber.real;
-        double newImaginary = this.real * complexNumber.imaginary + this.imaginary * complexNumber.real;
+        double newImaginary = this.imaginary + complexNumber.imaginary;
         return new ComplexNumber(newReal, newImaginary);
     }
 
